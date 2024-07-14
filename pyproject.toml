@@ -1,0 +1,30 @@
+[project]
+name = "learn-api"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Rohan", email = "deepakrohan@hotmail.com" }
+]
+dependencies = [
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.30.1",
+    "sqlalchemy>=2.0.31",
+    "pymysql>=1.1.1",
+    "mysql-connector-python-rf>=2.2.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/learn_api"]
