@@ -6,6 +6,8 @@ import uuid
 
 class Expense(Base):
     __tablename__ = "expenses"
+    # This below generates a UUID for the expense_id column everytime you save
+    
     expense_id = Column(
         String(36),
         primary_key=True,
