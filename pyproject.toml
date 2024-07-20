@@ -11,6 +11,7 @@ dependencies = [
     "sqlalchemy>=2.0.31",
     "pymysql>=1.1.1",
     "mysql-connector-python-rf>=2.2.2",
+    "ruff>=0.5.3",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

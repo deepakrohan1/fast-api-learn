@@ -1,6 +1,5 @@
 from typing import Optional
 from pydantic import BaseModel
-import uuid
 from datetime import datetime
 
 
@@ -22,3 +21,17 @@ class Expense(BaseModel):
                 "spent_on": "2022-01-01T00:00:00",
             }
         }
+
+"""
+Only show certain fields 
+"""
+
+class ExpenseResponse(BaseModel):
+    title: str
+    description: str
+    amount: float
+
+    class Config:
+        orm_mode = True
+
+
